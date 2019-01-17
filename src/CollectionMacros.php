@@ -15,7 +15,7 @@ class CollectionMacros
 			{
 			    $collection = ($property) ? $this->pluck($property) : $this;
 
-			    return implode(',', $collection->all());
+			    return implode(', ', $collection->all());
 			};
     }
 }
