@@ -1,34 +1,13 @@
-### Extend Laravel Collections
+## Extend Methods On Laravel Collections
 
 
-# Methods
+#### Methods
+* listify($property)
 
-/**
- *
- * @param Optional String 
- * @return string
- * 
- */
 
+**Example Usage**
 ```
-/**
- *
- * @params Optional String
- * @return String
- */
-
-listify($property)
-{ 
-
-  return implode(',' $collection->pluck('property')->all());
-}
-
-```
-
-
-*Example Listify Usage*
-```
-
-  $categoriesList = App\Post::first()->categories->listify('name');
-
+  $categories = App\Post::first()->categories;
+    
+  $categoriesList = $categories->listify('name'); 
 ```
