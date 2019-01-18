@@ -22,7 +22,7 @@ class CollectionMacros
 			  if(!$limit) return $list;
 
 
-				 (strlen($list) > $limit) ? substr($list, 0, $limit) . '...' : $list;
+				 return (strlen($list) > $limit) ? substr($list, 0, $limit) . '...' : $list;
 			};
     }
 }
