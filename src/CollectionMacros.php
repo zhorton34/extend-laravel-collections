@@ -5,17 +5,24 @@ namespace CleanCodeStudio\ExtendLaravelCollections;
 
 class CollectionMacros
 {
-    public function listify()
-    {
-    	/**
-			 * @param bool $property
-			 * @return string
-			 */
-			function($property = false)
+  public function listify()
+  {
+  	/**
+		 * @param String $property
+		 * @param Integer $limit
+		 *
+		 * @return string
+		 */
+			function($property = false, $limit = false)
 			{
-			    $collection = ($property) ? $this->pluck($property) : $this;
+			  $collection = ($property) ? $this->pluck($property) : $this;
 
-			    return implode(',', $collection->all());
+			  $list = implode(',', $collection->all());
+
+			  if(!$limit) return $list;
+
+
+				 return (strlen($list) > $limit) ? substr($list, 0, $limit) . '...' : $list;
 			};
     }
 }
