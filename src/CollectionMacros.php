@@ -19,7 +19,7 @@ class CollectionMacros
 			  
 		  $collection = ($property) ? $this->pluck($property) : $this;
 
-		  $list = implode(',', $collection->all());
+		  $list = implode(', ', $collection->all());
 
 		  if(!$limit) return $list;
 
