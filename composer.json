@@ -1,0 +1,23 @@
+{
+    "name": "clean-code-studio/extend-laravel-collections",
+    "description": "Extend Laravel Collections Using Macros",
+    "license": "MIT",
+    "keywords": ["clean-code-studio", "collections", "macros", "extend", "laravel collections"],
+    "authors": [
+        {
+            "name": "Zak Horton",
+            "email": "zhorton999@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "CleanCodeStudio\\ExtendLaravelCollections\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["CleanCodeStudio\\ExtendLaravelCollections\\ExtendCollectionServiceProvider"]
+        }
+    }
+}
