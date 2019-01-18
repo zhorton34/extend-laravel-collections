@@ -14,7 +14,7 @@ class ExtendCollectionServiceProvider extends ServiceProvider
    */
   public function boot()
   {
-  	Collection::mixin(new CollectionMacros)
+  	Collection::mixin(new CollectionMacros);
   }
 
   /**
