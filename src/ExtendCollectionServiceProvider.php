@@ -3,7 +3,9 @@
 namespace CleanCodeStudio\ExtendLaravelCollections;
 
 use Illuminate\Support\Collection;
+use CleanCodeStudio\CollectionMacros;
 use Illuminate\Support\ServiceProvider;
+
 
 class ExtendCollectionServiceProvider extends ServiceProvider
 {
